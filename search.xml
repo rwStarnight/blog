@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title><![CDATA[Project:PlayList]]></title>
+      <url>/2017/08/01/Project-PlayList/</url>
+      <content type="html"><![CDATA[<p>Start a new project called “PlayList”, which is for youtube users to build a 24hrs playlist.</p>
+<p>Stages for this new project:</p>
+<ol>
+<li>Design the Main Activity</li>
+<li>Edit the Main Activity( select the Views and Groups ,then position and style the Views)</li>
+<li>Create a Second Activity</li>
+</ol>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Blog]]></title>
       <url>/2017/07/30/Blog/</url>
       <content type="html"><![CDATA[<p>changed  blog’s scheme to NexT.Pisces</p>
