@@ -3,6 +3,34 @@
   
     
     <entry>
+      <title><![CDATA[JAVA STUDY 01]]></title>
+      <url>/2017/08/04/JAVA-STUDY-01/</url>
+      <content type="html"><![CDATA[<p>Methods</p>
+<ul>
+<li>Defining &amp; Calling Methods</li>
+<li>Inputs &amp; Output of A Method<br>e.g.     1 submitOrder(…){<pre><code>  ______________
+  calculatePrice(...);
+  ______________
+  }
+2 cacalculatePrice(...){_________________}
+</code></pre>1 to 2   zero or more input parameters（输入参数）<br>2 to 1   zero or one return value（返回值）<ul>
+<li>Defining a method<br>e.g.     private int calculatePrice(int quantity){ }<br>“private” : Access modifer（访问修饰符） Who has access to this method?  Private or Public ？<br>“int”: Return data type（输出返回数据类型）<br>“calculatePrice”: Method name（用动词开头）<br>“int”: Parameter data type（输入参数类型）<br>“quantity”: Parameter variable name</li>
+<li>Input Parameters<br>The inputs passed to a method can be called arguments.（实参）<br>NOTE：Parameters refers to the list of variables in a method declaration. Arguments are the actual values that are passed in when the method is invoked. When you invoke a method, the arguments used must match the declaration’s parameters in type and order.</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Project:PlayList]]></title>
       <url>/2017/08/01/Project-PlayList/</url>
       <content type="html"><![CDATA[<p>Start a new project called “PlayList”, which is for youtube users to build a 24hrs playlist.</p>
