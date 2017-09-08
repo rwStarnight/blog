@@ -3,6 +3,41 @@
   
     
     <entry>
+      <title><![CDATA[JavaScriptExcerise]]></title>
+      <url>/2017/09/07/JavaScriptExcerise/</url>
+      <content type="html"><![CDATA[<p>JavaScriptExercise</p>
+<p>String 1 : 使用字符串方法，将 “audacity” 转换为 “Udacity”。</p>
+<p>var s = “audacity”;<br>s = s[1].toUpperCase() + s.slice(2);</p>
+<p>让我们详细解释一下。</p>
+<p>s[1]<br>首先，我希望 “U” 为大写字母，所以我使用 “U” 的索引（即 1）， 使用括号进行捕捉。JavaScript 让我们使用括号选择字符串中的一个字符（以后， 你会发现，使用数组可完成相同的任务）。</p>
+<p>s[1].toUpperCase()<br>.toUpperCase() 是一个字符串方法，意味着该方法作用于它所附加到的 string， 在本例中为 s[1] 中的 “U”。</p>
+<p>此时，s[1].toUpperCase() 等于 “U”。</p>
+<p>+</p>
+<ul>
+<li>用于将字符串连接或添加到一起。例如， “Hello “ + “JS students!” 将产生 “Hello JS students!”。</li>
+</ul>
+<p>s.slice(2)<br>.slice() 是另外一个字符串方法，在本例中作用于字符串 s。.slice(start, [end]) 将捕捉从 start 索引到 end 索引的字符串部分。[end] 显示在括号中， 表示可选。如果未显示在括号中， 则 .slice() 将选择从 start 到字符串末尾的所有字符串。s.slice(2) 给出了 “dacity”。</p>
+<p>连接到一起，得到 “Udacity”！</p>
+<p>String 2 : 假定有一个由两个单词组成的姓名字符串，其中混合使用了大小写，你是否可对字符串进行处理，确保名字的首字母大写，且姓氏全部大写么？假定名字和姓氏之间有一个空格。例如，将类似于 “cAmEROn PittMAN” 的字符串转变为 “Cameron PITTMAN”。 你的答案应为一个字符串，保存到名为 finalName 的变量中。</p>
+<p>var name = “AlbERt EINstEiN”;<br>function nameChanger(oldName) {<br>    var finalName = oldName;<br>    var names = oldName.split(“ “);<br>    names[1] = names[1].toUpperCase();<br>    names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();<br>    finalName = names.join(“ “);<br>    return finalName;<br>}<br>console.log(nameChanger(name));</p>
+<p>详细解释：<br>var names = oldName.split(“ “)<br>这里，我们正在创建一个名称数组， 用空格将原始名称分开来。此时，对于我们的原始示例，names === [“AlbERt”, “EINstEiN”]</p>
+<p>names[1] = names[1].toUpperCase();<br>string.toUpperCase() 方法所做的工作恰好就是方法名称所描述的那样。它对 names[1]（即原始示例中的 “EINstEiN”）起作用。因此，这里，我们要将 names 数组中的第二个元素重新分配到全大写的 “EINSTEIN”。</p>
+<p>names[0] = names[0].slice(0,1).toUpperCase() + names[0].slice(1).toLowerCase();<br>此行生成 Albert。names[0].slice(0,1).toUpperCase() 首先作用于 names 数组中的第一个元素，即示例中的 “AlbERt”。然后，通过使用 .slice(0,1) 只获取第一个字母。接下来，我们再次使用 .toUpperCase() 方法以确保首字母大写。此外，请注意我们如何在此处将两个方法链接在一起。</p>
+<p>下个部分 names[0].slice(1).toLowerCase() 的作用方式类似， 不过这次我们使用 .slice(1) 来捕捉第一个字符串的剩余部分， 即此示例中的 “lbERt”。然后我们只链接 .toLowerCase() 方法以确保名字的剩余字母为小写。如果首字母大写且剩余字母小写， 则使用 + 将二者连接到一起。</p>
+<p>finalName = names.join(“ “);<br>array.join([chars]) 让我们将数组元素全部放到一个字符串中。每个元素将由可选的 chars 分开。在本例中，我们想在名字和姓氏之间加个空格， 所以将 chars 变为 “ “。</p>
+<p>利用这种方法，我们将 “Albert” 和 “Einstein” 连接到一起， 形成 “Albert EINSTEIN”！</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[About React-Native]]></title>
       <url>/2017/08/07/About-React-Native/</url>
       <content type="html"><![CDATA[<p>I’ve learned about JavaScript in the month of June and then study Java.<br>Now go back to React-Native.<br>With RN, I’ll complete my project “PlayList”.</p>
